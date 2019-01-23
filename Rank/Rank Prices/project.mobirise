@@ -1,0 +1,77 @@
+{
+  "settings": {
+    "name": "rankprices",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": "3",
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.9.1",
+    "siteFonts": [],
+    "uniqCompNum": 1,
+    "versionPublish": "4.9.1",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(45deg, @bg-value, @color2)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "text-align": "center"
+            }
+          },
+          "_name": "header5",
+          "_customHTML": "<section class=\"header5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#55b4d4\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"color\" name=\"color2\" title=\"Color2\" value=\"#073b4c\" condition=\"bg.type=='color'\" selected>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    NATIONAL SECURITY SERVICE</h1>\n                <p class=\"mbr-text align-center display-5 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Rank List\n<br>​RANK PRICES\n</b><br>\n<br><i>Main Founders must spilt 50-50 with each other when one of them makes sells.\n<br>​The rest you keep for yourself.\n<br>\n<br>Those found not giving share of profit to all founders &amp; abusing their seller rights will be punished &amp; stripped away of their badges.\n<br>Buying per division rate is shown below + tax (15%)\n<br>Buying per rank rate is shown below + tax (5%)\n<br>Members buying per promotion save 15% on costs\n</i><br><i><br></i><br><b>Approaching Standard Divisions\n<br>STANDARDS - NFS\n</b><br><br>Recruit - NFS\n<br>Agent I - 3c\n<br>Agent II - 5c\n<br>Agent III - 7c\n<br>Agent IV- 9c\n<br>Head Agent - 11c\n<br>Elite Officer I - 13c\n<br>Elite Officer II - 15c\n<br>Elite Officer III - 17c\n<br>Elite Officer IV - 19c\n<br>Elite Head Officer - 21c\n<br>Advertising​ - 100c\n<br>Trial Patrol Officer - 24c\n<br>​Patrol Officer I - 27c\n<br>Patrol Officer II - 30c\n<br>Patrol Officer III - 33c\n<br>Patrol Officer IV - 36c\n<br>Head Patrol Officer - 39c\n<br>Elite Patrol Officer I - 42c\n<br>Elite Patrol Officer II - 45c\n<br>Elite Patrol Officer III - 48c\n<br>Elite Patrol Officer IV - 51c\n<br>Head Elite Patrol Officer - 54c\n<br><i>When promoted from Advertising, the selected member must choose either </i><br><i><br></i><b>Training or Security.\n</b><br><br>Security - 150c\n<br>Trial Security Member - 59c\n<br>​Security Member I - 64c\n<br>Security Member II - 69c\n<br>Security Member III - 74c\n<br>Security Member IV - 79c\n<br>Head Security - 84c\n<br>Elite Security Officer I - 89c\n<br>Elite Security Officer II - 94c\n<br>Elite Security Officer III - 99c\n<br>Elite Security Officer IV - 104c\n<br>Elite Head Security Officer - 109c<br>\n<br><b>Trainer\n</b><br><br>Trial Training Officer\n<br>​Training Officer I\n<br>Training Officer II\n<br>Training Officer III\n<br>Training Officer IV\n<br>Head Training Officer\n<br>Elite Training Officer I\n<br>Elite Training Officer II\n<br>Elite Training Officer III\n<br>Elite Training Officer IV\n<br>Elite Head Training Officer\n<br><br><b>Approaching High Rank​ Divisions\n</b><br><b>Management&nbsp;</b><b><br></b><br>Trial Management - 116c\n<br>Novice Manager I - 123c\n<br>​Novice Manager II - 130c\n<br>Novice Manager III - 137c\n<br>Novice Manager IV - 144c\n<br>Junior Manager I - 151c\n<br>Junior Manager II - 158c\n<br>Junior Manager III - 165c\n<br>Junior Manager IV - 172c\n<br>Senior Manager I - 179c\n<br>Senior Manager II - 186c\n<br>Senior Manager III - 193 c\n<br>Senior Manager IV - 200c\n<br>Elite High Rank Manager I - 207c\n<br>Elite High Rank Manager II - 214c\n<br>Elite High Rank Manager III - 221c\n<br>Elite High Rank Manager IV - 228c\n<br>Elite Head Manager - 235c\n<br>Junior Commander I - 242c\n<br>Junior Commander II - 249c\n<br>Junior Commander III - 256c \n<br>Junior Commander IV - 263c\n<br>Senior Commander I - 270c\n<br>Senior Commander II - 277c\n<br>Senior Commander III - 284c\n<br>Senior Commander IV - 291c\n<br>Elite Commander I - 298c\n<br>Elite Commander II - 305c\n<br>Elite Commander III - 312c\n<br>Elite Commanding Officer - 319c\n<br><br><b>Senior Management&nbsp;</b><br><br>Trial Senior Management - 328c\n<br>Novice Commissioner - 337c\n<br>Junior Commissioner I - 346c\n<br>Junior Commissioner II - 355c\n<br>Junior Commissioner III - 364c\n<br>Senior Commissioner I - 373c\n<br>Senior Commissioner II - 382c\n<br>Senior Commissioner III - 391c\n<br>Supervising Commissioner I - 400c\n<br>Supervising Commissioner II - 409c\n<br>Supervising Commissioner III - 418c\n<br>Head Commissioner - 427c\n<br>Novice Co-Ordinator - 436c\n<br>Junior Co-Ordinator I - 445c\n<br>Junior Co-Ordinator II - 454c\n<br>Junior Co-Ordinator III - 463c\n<br>Senior Co-Ordinator I - 472c\n<br>Senior Co-Ordinator II - 481c\n<br>Senior Co-Ordinator III - 490c\n<br>Elite Co-Ordinator I - 499c\n<br>Elite Co-Ordinator II - 508c\n<br>Elite Co-Ordinator III - 517c\n<br>Elite Head Senior Manager - 525c\n<br>\n<br><b>Leadership&nbsp;</b><br><br>Trial Leadership - 538c\n<br>Novice Leadership - 551c\n<br>Junior Leadership I - 564c\n<br>Junior Leadership II - 577c\n<br>Junior Leadership III - 590c\n<br>Senior Leadership I - 603c\n<br>Senior Leadership II - 616c\n<br>Senior Leadership III - 629c\n<br>Master Leadership I - 642c\n<br>Master Leadership II - 655c\n<br>Master Leadership III - 668c\n<br>Leadership Officer - 681c\n<br>Leadership Sergeant - 694c\n<br> Leadership Lieutenant - 707c\n<br>Leadership Captain - 720c\n<br>Leadership Lieutenant Colonel - 733c\n<br>Head Leadership - 746c\n<br>Deputy Leadership Chief - 759c\n<br>Elite Leadership Chief - 772c\n<br><br><b>Approaching Elective Division\n</b><br><br><i>Members can only be promoted to this rank by applying, running campaign, Members will be selected by the Founders themselves. DO NOT TRANSFER INTO THIS DIVISION. (Those who do will be severely punished).\n<br>Elective Division - NFS\n<br>Trial Elective - NFS\n</i><br>​\n<br><b>Internal Affairs (5iC)</b><b><br></b><br>Trial IA - 797c\n<br>IA Officer I - 823c\n<br>IA Officer II - 848c\n<br>IA Officer III - 873c\n<br>IA Officer IV - 898c\n<br>Head IA Officer - 923c\n<br>IA Inspector - 948c\n<br>IA Manager - 973c\n<br>IA Official - 998c\n<br>IA Commanding Officer -1023c\n<br><br><b>Head of Departments (4iC)&nbsp;</b><br><br>Trial HoD - 1073c\n<br>Head of Advertising - 1123c\n<br>Head of Security - 1173c\n<br>Head of Training - 1223c\n<br>Head of Events - 1273c\n<br>Head of Internal Affairs - 1323c\n<br>Head of External Affairs - 1373c\n<br>Head of Financial Affairs - 1423c\n<br>Head of Transfers - 1473c\n<br>Head of Junior Executives - 1523c\n<br><br><b>​Head of Senior Executives (3iC)</b><br><br><i>Approaching Senior Leadership Team (These members must be respected no less nor unfairly by any ranks). Any one no matter the rank shall be respected at all times.\n</i><br><b><br>Directors Of NSS (3iC)</b><br><br>Trial Directors - 2720C<br>Director of Advertising - 2750C<br>Director of Security - 2770C<br>Director of Training - 2780C<br>Director of Events - 2800C<br>Director of Internal Affairs - 2820C<br>Director of External Affairs - 2850C<br>​Director of Financial Affairs - 2870C<br>Director of Transfers -2875C&nbsp;<br>Director of Junior Executives - 2890C<br>Director of Senior Executives - 2900C<br>Assistant Director x2 (2iC) - 2950c\n<br><br><b>Head Director (2iC)&nbsp;</b><br><br>SUPREME COMMAND of NSS (2iC) - 5000c\n<br>Trial SC - \n<br>Junior Supreme Commander -\n<br>Senior Supreme Commander - \n<br>Vice Supreme Commander x2 (1.5iC) - 5500c\n<br>Head Supreme Commander (1.5iC) - 6000c\n<br><i>Founders will select their representatives based on loyalty, activity, respect, responsibility, actions etc. Those who seem to be abusing power or rules will be removed from the list of people to be chosen as a representative.\n<br>Members of National Security Service will be the ones to vote for a 2 vice-presidents, 1 president and 5 secretaries. The founders will pick one of the people voted for 1 of the 8 positions. Elections will be based on activity, respect, responsibility, etc based on the current members of the division. If they are abusing their power and rank they will be forced to leave NSS. Appointing a new member to be elected.\n</i><br><br><b>Founder's Representatives (1iC)\n</b><br><br>Tilhanda's Representative - NFS\n<br>Reapershadow's Representative - NFS<br>Presidential Division (1iC) 10000c​​\n<br>Secretary of Internal Affairs - \n<br>Secretary of Financial Affairs - \n<br>Secretary of The Vice-President x2 - \n<br>Secretary of The President - \n<br>Vice-President x2 (0.5iC) - 12500c\n<br>President of The NSS (0.5iC) - 15000c\n<br><br><b>Ownership (0.5iC)&nbsp;</b><br><br>Trial Ownership x4 - \n<br>Junior Owners x2 - \n<br>Senior Owners x2 -\n<br>Head Owners x2 - \n<br>Co-Owners x2 (iC) - 30,000c\n<br>Owner (iC)- 35,000c\n<br><br><b>Foundation Cabinet (iC)</b><br><br> Trial Founders x2 - N/A\n<br>Junior Founder - N/A\n<br>Senior Founder - N/A\n<br>Co-Founders x2 - N/A\n<br><br><b>Main Founders of NSS (iC) - NFS</b>\n<br><br>Elite Founding Father - Tilhanda\n<br>Head Founding Father - Reapershadow\n<br>Administering Founding Father - N/A</p>\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rfOlzTx7aj",
+          "_anchor": "header5-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}

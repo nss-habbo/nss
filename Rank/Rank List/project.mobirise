@@ -1,0 +1,74 @@
+{
+  "settings": {
+    "name": "ranklist",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise4",
+      "title": "Mobirise 4",
+      "styling": {
+        "primaryColor": "#149dcc",
+        "secondaryColor": "#ff3366",
+        "successColor": "#F7ED4A",
+        "infoColor": "#82786E",
+        "warningColor": "#879A9F",
+        "dangerColor": "#B1A374",
+        "mainFont": "Rubik",
+        "display1Font": "Rubik",
+        "display1Size": "3",
+        "display2Font": "Rubik",
+        "display2Size": 3,
+        "display5Font": "Rubik",
+        "display5Size": 1.5,
+        "display7Font": "Rubik",
+        "display7Size": 1,
+        "display4Font": "Rubik",
+        "display4Size": 1,
+        "isRoundedButtons": true,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "4.9.1",
+    "siteFonts": [],
+    "uniqCompNum": 1,
+    "versionPublish": "4.9.1",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background": "linear-gradient(45deg, @bg-value, @color2)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            }
+          },
+          "_name": "header5",
+          "_customHTML": "<section class=\"header5\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n        <input type=\"checkbox\" title=\"Show Buttons\" name=\"showButtons\">\n        <input type=\"checkbox\" title=\"Show Arrow\" name=\"showArrow\">\n\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"../_images/background4.jpg\" parallax>\n            <input type=\"color\" title=\"Background Color\" value=\"#55b4d4\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n        </fieldset>\n        <input type=\"color\" name=\"color2\" title=\"Color2\" value=\"#073b4c\" condition=\"bg.type=='color'\" selected>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row justify-content-center\">\n            <div class=\"mbr-white col-md-10\">\n                <h1 class=\"mbr-section-title align-center pb-3 mbr-fonts-style\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">\n                    NATIONAL SECURITY SERVICE</h1>\n                <p class=\"mbr-text align-center display-5 pb-3 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>RANK LIST<br>Approaching Standard Divisions \n<br>\n<br>STANDARDS </b><br><b>\n</b><br>Recruit \n<br>Agent I \n<br>Agent II \n<br>Agent III \n<br>Agent IV \n<br>Head Agent \n<br>Elite Officer I \n<br>Elite Officer II \n<br>Elite Officer III \n<br>Elite Officer IV \n<br>Elite Head Officer <br>\n<br><b>Advertising</b><br>​ \n<br>Trial Patrol Officer \n<br>​Patrol Officer I \n<br>Patrol Officer II \n<br>Patrol Officer III \n<br>Patrol Officer IV \n<br>Head Patrol Officer \n<br>Elite Patrol Officer I \n<br>Elite Patrol Officer II \n<br>Elite Patrol Officer III \n<br>Elite Patrol Officer IV \n<br>Head Elite Patrol Officer \n<br><i>When promoted from Advertising, the selected member must choose either Training or Security.\n</i><br>\n<br><b>Security </b><br>\n<br>Trial Security Member \n<br>​Security Member I \n<br>Security Member II \n<br>Security Member III \n<br>Security Member IV \n<br>Head Security \n<br>Elite Security Officer I \n<br>Elite Security Officer II \n<br>Elite Security Officer III \n<br>Elite Security Officer IV \n<br>Elite Head Security Officer <br>\n<br><b>Trainer </b><br>\n<br>Trial Training Officer \n<br>​Training Officer I \n<br>Training Officer II \n<br>Training Officer III \n<br>Training Officer IV \n<br>Head Training Officer \n<br>Elite Training Officer I \n<br>Elite Training Officer II \n<br>Elite Training Officer III \n<br>Elite Training Officer IV \n<br>Elite Head Training Officer \n<br><b>Approaching High Rank​ Divisions \n<br>\n<br>Management </b><br>\n<br>Trial Management \n<br>Novice Manager I \n<br>​Novice Manager II \n<br>Novice Manager III \n<br>Novice Manager IV \n<br>Junior Manager I \n<br>Junior Manager II \n<br>Junior Manager III \n<br>Junior Manager IV \n<br>Senior Manager I \n<br>Senior Manager II \n<br>Senior Manager III \n<br>Senior Manager IV \n<br>Elite High Rank Manager I \n<br>Elite High Rank Manager II \n<br>Elite High Rank Manager III \n<br>Elite High Rank Manager IV \n<br>Elite Head Manager \n<br>Junior Commander I \n<br>Junior Commander II \n<br>Junior Commander III \n<br>Junior Commander IV \n<br>Senior Commander I \n<br>Senior Commander II \n<br>Senior Commander III \n<br>Senior Commander IV \n<br>Elite Commander I \n<br>Elite Commander II \n<br>Elite Commander III \n<br>Elite Commanding Officer \n<br>\n<br><b>Senior Management <br></b>\n<br>Trial Senior Management \n<br>Novice Commissioner \n<br>Junior Commissioner I \n<br>Junior Commissioner II \n<br>Junior Commissioner III \n<br>Senior Commissioner I \n<br>Senior Commissioner II \n<br>Senior Commissioner III \n<br>Supervising Commissioner I \n<br>Supervising Commissioner II \n<br>Supervising Commissioner III \n<br>Head Commissioner \n<br>Novice Co-Ordinator \n<br>Junior Co-Ordinator I \n<br>Junior Co-Ordinator II \n<br>Junior Co-Ordinator III \n<br>Senior Co-Ordinator I \n<br>Senior Co-Ordinator II \n<br>Senior Co-Ordinator III \n<br>Elite Co-Ordinator I \n<br>Elite Co-Ordinator II \n<br>Elite Co-Ordinator III \n<br>Elite Head Senior Manager \n<br>\n<br><b>Leadership </b><br>\n<br>Trial Leadership \n<br>Novice Leadership \n<br>Junior Leadership I \n<br>Junior Leadership II \n<br>Junior Leadership III \n<br>Senior Leadership I \n<br>Senior Leadership II \n<br>Senior Leadership III \n<br>Master Leadership I \n<br>Master Leadership II \n<br>Master Leadership III \n<br>Leadership Officer \n<br>Leadership Sergeant \n<br>Leadership Lieutenant \n<br>Leadership Captain \n<br>Leadership Lieutenant Colonel \n<br>Head Leadership \n<br>Deputy Leadership Chief \n<br>Elite Leadership Chief \n<br>\n<br><b>Approaching Elective Division</b> \n<br><i>Members can only be promoted to this rank by applying, running campaign, Members will be selected by the Founders themselves. DO NOT TRANSFER INTO THIS DIVISION. (Those who do will be severely punished). \n</i><br>\n<br><b>Elective Division <br></b>\n<br>Trial Elective \n<br>Elective Candidate I \n<br>Elective Candidate II \n<br>Elective Candidate III \n<br>Elective Candidate IV \n<br>Elite Elective Member \n<br>​ \n<br><b>Internal Affairs (5iC) </b><br>\n<br>Trial IA \n<br>IA Officer I \n<br>IA Officer II \n<br>IA Officer III \n<br>IA Officer IV \n<br>Head IA Officer \n<br>IA Inspector \n<br>IA Manager \n<br>IA Official \n<br>IA Commanding Officer \n<br>\n<br><b>Head of Departments (4iC)</b> <br>\n<br>Trial HoD - N/A \n<br>Head of Advertising - N/A \n<br>Head of Security - N/A \n<br>Head of Training - N/A \n<br>Head of Events - N/A \n<br>Head of Internal Affairs - N/A \n<br>Head of External Affairs - N/A \n<br>Head of Financial Affairs - N/A \n<br>Head of Transfers - N/A \n<br>Head of Junior Executives - N/A \n<br>​Head of Senior Executives (3iC) - N/A \n<br><i>Approaching Senior Leadership Team (These members must be respected no less nor unfairly by any ranks). Any one no matter the rank shall be respected at all times.\n<br></i>\n<br><b>Directors Of NSS (3iC) </b><br>\n<br>Trial Directors - N/A \n<br>Director of Advertising - N/A \n<br>Director of Security - N/A \n<br>Director of Training - N/A \n<br>Director of Events - N/A \n<br>Director of Internal Affairs - N/A \n<br>Director of External Affairs - N/A \n<br>​Director of Financial Affairs - N/A \n<br>Director of Transfers - N/A \n<br>Director of Junior Executives - N/A \n<br>Director of Senior Executives - N/A \n<br>Assistant Director x2 (2iC) - N/A \n<br>Head Director (2iC) - N/A \n<br>\n<br><b>SUPREME COMMAND of NSS (2iC) <br></b>\n<br>Trial SC - N/A \n<br>Junior Supreme Commander - N/A \n<br>Senior Supreme Commander - N/A \n<br>Vice Supreme Commander x2 (1.5iC) - N/A \n<br>Head Supreme Commander (1.5iC) - N/A \n<br><i>Founders will select their representatives based on loyalty, activity, respect, responsibility, actions etc. Those who seem to be abusing power or rules will be removed from the list of people to be chosen as a representative. \n<br>Members of National Security Service will be the ones to vote for a 2 vice-presidents, 1 president and 5 secretaries. The founders will pick one of the people voted for 1 of the 8 positions. Elections will be based on activity, respect, responsibility, etc based on the current members of the division. If they are abusing their power and rank they will be forced to leave NSS. Appointing a new member to be elected. \n</i><br>\n<br>\n<br><b>Founder's Representatives (1iC) </b><br>\n<br>Tilhanda's Representative - N/A \n<br>Reapershadow's Representative - N/A \n<br>Co-Founder's Representative - N/A \n<br>Senior Founder's Representative - N/A \n<br>Junior Founder's Representative - N/A \n<br>\n<br><b>Presidential Division (1iC)​​ </b><br>\n<br>Secretary of Internal Affairs - N/A \n<br>Secretary of Financial Affairs - N/A \n<br>Secretary of The Vice-President x2 - N/A \n<br>Secretary of The President - N/A \n<br>Vice-President x2 (0.5iC) - N/A \n<br>President of The NSS (0.5iC) - N/A \n<br>\n<b><br>Ownership (0.5iC)</b><br> \n<br>Trial Ownership x4 - N/A \n<br>Junior Owners x2 - N/A \n<br>Senior Owners x2 -N/A \n<br>Head Owners x2 - N/A \n<br>Co-Owners x2 (iC) - N/A \n<br>Owner (iC)- N/A \n<br>\n<br><b>Foundation Cabinet (iC) </b><br>\n<br>Trial Founders x2 - N/A \n<br>Junior Founder - N/A \n<br>Senior Founder - N/A \n<br>Co-Founders x2 - N/A \n<br>\n<br><b>Main Founders of NSS (iC) </b><br>\n<br>Head Founding Father - Tilhanda \n<br>Head Founding Father - Reapershadow</p>\n                <div class=\"mbr-section-btn align-center\" mbr-buttons mbr-theme-style=\"display-4\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\"><a class=\"btn btn-md btn-white-outline\" href=\"https://mobirise.co\" data-app-placeholder=\"Type Text\">LIVE DEMO</a></div>\n            </div>\n        </div>\n    </div>\n\n    <div mbr-if=\"showArrow\" class=\"mbr-arrow hidden-sm-down\" aria-hidden=\"true\">\n        <a href=\"#next\">\n            <i class=\"mbri-down mbr-iconfont\"></i>\n        </a>\n    </div>\n</section>",
+          "_cid": "rfOqgGI7pf",
+          "_anchor": "header5-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
